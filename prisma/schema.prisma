@@ -18,8 +18,8 @@ model User {
   createAt  DateTime @default(now())
   updatedAt DateTime @updatedAt
 
-  email String
-  name  String
+  email String @unique
+  hash  String
 
   firstName String?
   lastName  String?
